@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;300&display=swap');
+body{
+    font-family: 'Sora', sans-serif;
+    background-color: #0D4C92;
+    color: #CFF5E7;
+
+}
+
+#seleccionar_mascota{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+
+.titulo{
+    text-decoration:underline;
+    text-align: center;
+    font-size: 32px;
+}
+
+.subtitulo{
+    font-size: 20px;
+}
+
+#mokepones, .boton-a{
+    display: flex;
+    gap:10px;
+}
+
+
+
+.cuadro-mokepones{
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    background: #59C1BD;
+    border: 10px solid #CFF5E7;
+    padding: 10px;
+    margin:20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cuadro-mokepones img{
+    width: 150px;
+    height: 150px;
+}
+
+#boton_mascotas{
+    height: 50px;
+    width: 200px;
+    margin:30px 0px 0px 0px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: transparent;
+    font-family: 'Sora', sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+input{
+    display:none
+}
+
+#seleccionar_ataque{
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-ataque{
+    height: 100px;
+    width: 100px;
+    margin:30px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-radius:50% ;
+    background-color: #59C1BD;
+    border-color: transparent;
+    font-family: 'Sora', sans-serif;
+    font-size: 30px;
+
+}
+
+#box-texto{
+    width: 300px;
+
+    background-color: #A0E4CB;
+    border-radius: 50px;
+    margin-top: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+}
+
+#gano-perdio{
+    font-size: 30px;
+    color:black;
+    text-align: center;
+}
+
+#boton_reiniciar{
+    font-family: 'Sora', sans-serif;
+    font-size: 20px;
+    border:none;
+    color: #0D4C92;
+    background-color: transparent;
+}
+
+.ataque{
+    display:grid;
+    grid-template-columns: 300px 300px;
+    margin: 20px;
+    background-color: orange;
+    text-align: center;
+    border-radius: 20px;
+}
+
+input:checked +label{
+    background-color: #FED049;
+}
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#ver-mapa button{
+    height: 40px;
+    width: 80px;
+    margin:30px 0px 0px 0px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: transparent;
+    font-family: 'Sora', sans-serif;
+    color: white;
+    font-size: 15px;
+    margin:10px 0px;
+    
+}
+
+
+@media (max-width:560px ){
+    #mokepones, .boton-a{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:300px ){
+    #ver-mapa div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+}
+
+
